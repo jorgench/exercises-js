@@ -1,4 +1,5 @@
 export class ItemDeCarrito {
+  /* Se ejecuta al crear la instancia de clase ejem: const item = new ItemDeCarrito({..}) */
   constructor(producto) {
     this.producto = producto;
     this.cantidad = 1;
