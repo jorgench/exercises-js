@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercises-js</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <div id="app" class="min-h-screen flex flex-col">
+      <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1 class="text-3xl font-bold">🛍️ La Tiendita</h1>
+          <nav>
+            <a href="#" class="text-white mx-4 hover:text-yellow-300">Inicio</a>
+            <a href="#" class="text-white mx-4 hover:text-yellow-300"
+              >Productos</a
+            >
+            <a href="#" class="text-white mx-4 hover:text-yellow-300"
+              >Carrito</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main class="container mx-auto p-6 flex-1">
+        <!-- LISTA DE PRODUCTOS -->
+        <section class="productos mb-12">
+          <h2 class="text-2xl font-semibold mb-6">Productos</h2>
+
+          <div
+            id="contenedor-productos"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          ></div>
+        </section>
+
+        <!-- CARRITO -->
+        <section class="carrito bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-2xl font-semibold mb-6">Carrito</h2>
+
+          <ul id="carrito-lista" class="carrito-lista">
+            <li class="carrito-item text-lg">No hay productos en el carrito</li>
+          </ul>
+
+          <div class="carrito-resumen mt-6">
+            <p class="text-xl">
+              Total:
+              <span id="totalDeCarro" class="total text-lg text-gray-700"
+                >$0</span
+              >
+            </p>
+            <button
+              class="btn-pagar mt-4 bg-green-500 text-white py-2 px-6 rounded hover:bg-green-600"
+            >
+              Pagar
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer bg-blue-600 text-white p-4 mt-12">
+        <div class="container mx-auto text-center">
+          <p>© 2026 La Tiendita</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
